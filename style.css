@@ -1,0 +1,106 @@
+
+:root{
+    --background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --main-heading-statse: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6)
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Inter';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    background-color: var(--background);
+    color:white;
+    
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 50vw;
+    display: flex;
+    background-color: var(--card-background);
+    border-radius: .5rem;
+}
+.img-box{
+    width: 50%;
+    display: flex;
+    background-image: linear-gradient(
+        0deg,
+        hsla(277, 100%, 26%, 0.5) 0%,
+        hsla(277, 64%, 61%, 0.5) 100%
+      ),url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.content{
+    width: 50%;
+    padding: 2em;
+}
+.insight-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.one-insight{
+    text-align: center;
+}
+.insight-number{
+    font-weight: 700;
+    font-size: 1.3em;
+    color: var(--main-heading-statse);
+    padding-bottom: .7em;
+}
+.insight-content{
+    color: var(--main-paragraph);
+}
+span{
+    color: var(--accent)
+}
+p{
+    color: var(--main-paragraph);
+    margin-bottom: 3rem;
+    
+}
+
+
+
+@media screen and (max-width:900px) {
+    .box{
+        width: 80vw;
+        height: 95vh;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .img-box{
+        width: 100%;
+        height: 40%;
+        border-radius: .5rem .5rem 0 0;
+    }
+    .content{
+        width: 100%;
+        height: 60%;
+    }
+    .insight-box{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    p{
+        margin-bottom: 1rem;
+    }
+}
