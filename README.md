@@ -34,8 +34,8 @@ Users should be able to:
 ![ Mobile Design](mobile-design.jpg)
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
-- Live Site URL: [Add live site URL here](https://elegant-bartik-e2ffcf.netlify.app/)
+- Solution URL: [on frontend mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62)
+- Live Site URL: [on netlify](https://elegant-bartik-e2ffcf.netlify.app/)
 
 ## My process
 
